@@ -1,14 +1,6 @@
 # Adam Benali
 def decoder(password):
-    newPassword = ""
+    newpassword = ""
     for i in password:
-        newPassword += (int(i) - 3)
-    return newPassword
-
-
-
-
-
-
-
-
+        newpassword += str((int(i) - 3) % 10)
+    return newpassword
