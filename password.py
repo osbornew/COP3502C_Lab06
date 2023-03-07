@@ -1,9 +1,7 @@
 # Author: William Osborne
 # Partner: Adam Benali
 
-def decode(pw):
-	exit()
-	# decoding goes here
+from decoder import *
 
 def encode(pw):
 	out = ""
@@ -22,8 +20,7 @@ def main():
 			pw = encode(pw)
 			print("Your password has been encoded and stored!\n")
 		elif ch == "2":
-			decode()
-
+			print(f"The encoded password is {pw}, and the original password is {decode(pw)}")
 		elif ch == "3":
 			exit()
 
